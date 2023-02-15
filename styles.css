@@ -28,6 +28,9 @@ header {
                 /* اصنع ايكونة المنسدلة */
                 display: none;
         }
+        .services-icons {
+                display: none
+        }
 }
 
 header a {
@@ -53,20 +56,19 @@ header a {
 section {
         padding: 100px;
 }
-section > div {
-        color: #fff;
-}
+
 
 .intro {
+        color: #fff;
         position: relative;
         width: 100%;
         min-height: 100vh;
         display: flex;
         align-items: center;     
-        background-image: url(images/background.png), url(https://cdn.mos.cms.futurecdn.net/J2riQgcYvjW4PGGmWU3FzD.jpg);
-        background-size: contain ;
+        background-image: url(images/background.png) , url(images/J2riQgcYvjW4PGGmWU3FzD.jpg);
+        background-size: contain, cover;
+        background-position: right, center;
         background-repeat: no-repeat;
-        background-position: right;
         background-color: black;
 
 }       
@@ -129,6 +131,58 @@ h3 {
         padding-right: 30px;
 }
 
-.card-container {
-        color: black;
+.cards-container {
+        padding: 0;
+        background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );;
+}
+
+
+
+.title {
+        display: flex;
+        justify-content: center;
+        color: limegreen;
+        font-size: 3em;
+        font-weight: 700;
+        margin-bottom: 30px;
+        font-style: italic;
+        letter-spacing: 3px;
+}
+
+.cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        text-align: center;
+        /* color: white; */
+        font-weight: 450;
+        font-size: 1em;
+}
+
+.card {
+        background-color: white;
+        width: 23.25em;
+        height: max-content;
+        padding: 15px 15px 30px;
+        /* margin: 10px -159px; */
+        margin: 20px ;
+        border-radius: 15px;
+        box-shadow: 6px 9px 5px 0px #80808094;
+        transition: .7s ease;
+        
+}
+
+.card:hover {
+        transform: scale(1.1); 
+}
+
+.card > h3{
+        color: yellow;
+        font-weight: 600;
+}
+
+.services-icons {
+        font-size: 14em;
+        color: #ffbf00;
 }
