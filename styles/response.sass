@@ -1,0 +1,207 @@
+// ================ P
+
+@keyframes pulse-ring 
+    0% 
+        transform: scale(.33)
+        opacity: .8
+    80%, 100%
+        transform: scale(1)
+        opacity: 0
+
+@keyframes pulse-dot 
+    0% 
+        transform: scale(.8)
+    50% 
+        transform: scale(1)
+    100% 
+        transform: scale(.8)
+
+@keyframes wave
+    0% 
+        transform: rotate(35deg)
+    50% 
+        transform: rotate(0)
+    100% 
+        transform: rotate(35deg)
+
+@keyframes left-right
+    0% 
+        transform: rotate(-26deg)
+    50% 
+        transform: rotate(-6deg)
+    75% 
+        transform: rotate(-26deg)
+    100% 
+        transform: rotate(-16deg)
+
+@keyframes fade-up
+    0% 
+        transform: rotate(16deg) translateX(14px)
+        opacity: 0
+    40% 
+        opacity: .3
+    60% 
+        opacity: .8
+    100% 
+        transform: rotate(0) translateX(0)
+        opacity: 1
+
+
+@media (max-width: 1180px) 
+    .Hero .content 
+        h1
+            font-size: 2.2rem
+
+@media (max-width: 920px) 
+    body
+        .heading
+            font-size: 1.3rem
+
+    .Navbar 
+        .menu-btn
+            display: block !important
+            .openIcon
+                display: inline-blockblock !important
+        .linksBx 
+            display: none !important
+    .container
+        width: 90%
+    .Hero .content 
+        h1
+            font-size: 2rem
+    .About 
+        .subheading
+            margin-bottom: 50px
+        .imgBx
+            display: none
+
+@media (max-width: 733px) 
+    body
+        font-size: 14px !important
+    .Hero .content 
+        h1
+            font-size: 1.7rem
+    .Contact .section-wrapper
+        flex-direction: column 
+        width: 100%
+        align-items: center
+        gap: 50px
+        .form
+            width: 100%
+            text-align: center
+            input
+                height: 55px
+        .info
+            width: max-content
+            .wrapper
+                justify-content: space-between
+                // gap: 400px
+                
+            .links
+                width: 100%
+                flex-direction: row
+                justify-content: space-between
+                margin-top: 20px
+                .link
+                    width: max-content
+
+@media (max-width: 630px) 
+    body
+        font-size: 13px !important
+    .Navbar .dropdown-menu
+        width: 100% !important
+
+    .Hero 
+        padding-top: 50px
+        gap: 50px
+        .content 
+            flex-direction: column
+            gap: 30px
+            h1
+                width: 100%
+                text-align: center
+                line-height: 1.35
+                font-size: 1.8rem
+            h1 br:nth-child(3)
+                display: none
+            .imgBx
+                width: 75%
+
+    .Stack, .Technology
+        .cards
+            .card
+                position: sticky
+                top: 20vh
+    
+
+@media (max-width: 390px) 
+    .Navbar .logoBx
+        height: 60px !important
+        .face
+            display: none !important
+        .text
+            // height: 15px
+    .heading, .subheading
+        text-align: center !important
+    .Hero
+        h1
+            font-size: 1.4rem
+        .imbBx
+
+    .Contact .info
+        width: 100% !important
+        padding-inline: 10px
+        div.wrapper
+            justify-content: space-between !important
+            gap: 0 !important
+        .links
+            width: 80%
+
+    
+@media (max-width: 320px) 
+    .Hero
+        h1
+            font-size: 1.1rem
+    
+    .Contact .info
+        width: 100% !important
+        padding-inline: 10px
+        div.wrapper
+            justify-content: space-between !important
+            gap: 0 !important
+        .links
+            width: 100%
+
+
+
+// @media (max-width: 414px) 
+//     body
+//         .container
+//             width: 90%
+//             padding-bottom: 30px
+        
+//         // font-size: 14px
+//         nav .linksBx
+//             display: none
+
+
+//         .Hero 
+//             padding-top: 10px
+//             background: none
+//             // border: 1px solid
+
+//             gap: 45px
+//             .content
+//                 flex-direction: column
+//                 gap: 20px
+//                 h1
+//                     width: 100%
+//                     font-size: 2rem
+//                     line-height: 1.4
+//                     text-justify: justify
+//                 .imgBx
+//                     width: 100%
+//                     p
+//                         left: 0
+//             .btnBx .btnSolid
+//                 max-width: 100%

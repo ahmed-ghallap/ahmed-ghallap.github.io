@@ -1,0 +1,44 @@
+/* ==== ==== ==== Start CSS Varibles ==== ==== ==== */
+
+:root {
+    --primary-clr: #A7DBF6;
+    --primary-light-clr: #E7FFFF;
+    --secondary-clr: #3DBCAE; 
+    --secondary-light-clr: #75E6DA; 
+    --text-dark-clr: #333;
+    --text-darker-clr: #000;
+}
+
+/* ==== ==== ==== End CSS Varibles ==== ==== ==== */
+
+.btn {
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+.d-none {
+    display: none;
+}
+/* Start Animaion stuff */
+    .data-hover {
+        text-align: left;
+        position: relative;
+    }
+    .data-hover::after {
+        content: attr(data-hover);
+        position: absolute;
+        top: 0; left: 0;
+        width: 0;
+        color: var(--action-clr);
+        overflow: hidden;
+        transition: 1s;
+        white-space: nowrap;
+    }
+    .data-hover:hover::after {
+        width: 100%;
+    }
+    .data-hover:hover {
+        opacity: 0;
+    }
+/* End Animaion stuff */
+

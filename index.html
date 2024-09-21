@@ -1,72 +1,309 @@
+<!-- بسم الله -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ====== Start CSS Files =====-->        <!-- Main file from style.sass  -->
+       <link rel="stylesheet" href="styles/style.css">
+        <!-- Framework file -->
+        <link rel="stylesheet" href="styles/framework.css">
+        <!-- font awesome lib 6.5.1  -->
+        <link rel="stylesheet" href="styles/all.css">
+        <!-- normalize file -->
+        <link rel="stylesheet" href="styles/normalize.css">
+    <!-- ====== End CSS Files =====-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
     <title>Ahmed Ghallap</title>
-    <link href="styles.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    
-    <header>
-        <a class="logo" href="#">Ahmed</a>
-        <nav class="nav">
-            <a href="#">Projects</a>
-            <a href="#">Services</a>
-            <a href="#">contact</a>
+    <!--  ========== Navbar ========== -->
+    <div class="Navbar">
+        <nav>
+            <div class="logoBx">
+                <img class="face"  src="media/logo.png" alt="Ahmed's logo picture" srcset="">
+                <img class="text" src="media/ahmedghallap.svg" alt="ahmed's logo text ">
+            </div>
+            <ul class="linksBx">
+                <li><a  href="#Stack">Stack</a></li>
+                <li><a  href="#About">About</a></li>
+                <li><a  href="#Projects">Portofolio</a></li>
+                <li><a class="btnSolid" href="#Contact">Contact Me</a></li>
+            </ul>
+            <ul class=" dropdown-menu">
+                <li><a  href="#Stack">Stack</a></li>
+                <li><a  href="#About">About</a></li>
+                <li><a  href="#Projects">Portofolio</a></li>
+                <li><a class="btnSolid" href="#Contact">Contact Me</a></li>
+           </ul>
+
+            <div class="menu-btn">
+                <img id="open-icon" src="media/icons/menu.svg" alt="" srcset="">
+                <img id="close-icon" src="media/icons/close.svg" alt="" srcset="">
+            </div>
         </nav>
-    </header>
-
-    <section class="intro">
-        <div>
-            <h2>Hello, can I enter!!</h2>
-            <h2 class="job">Student</h2>
-            <h3>I build my self</h3>
-            <a href="#" class="btn">Click me</a>
-            <div class="social-icons">
-                <a href="my facebook"><i class="fa-brands fa-facebook"></i></a>
-                <a href="my github"><i class="fa-brands fa-github-alt"></i></a>
-                <a href="my gmail"><i class="fa-solid fa-envelope"></i></a>
-            </div>
-    </section>
-
-
-    <section class="cards-container">
-        <h2 class="title">Services</h2>
-        <div class="cards">
-            <div class="card" id="card-1">
-                <div class="services-icons">
-                    <i class="fa-solid fa-sailboat"></i>
-                </div>
-                <h3>sub-title</h3>
-                <div class="contetn">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, deleniti, dolor ratione non tenetur eius est quas temporibus nisi eligendi deserunt quos voluptatem esse laborum? Eum aliquid expedita dolorem corporis! 
+    </div>
+    <!--  ========== Hero Section ========== -->
+    <div class="HeroCover">
+        <div class="Hero container">
+            <div class="content">
+                <h1>
+                    Ahmed is  a<br>
+                    Full Stack Developer<br>
+                    And a<br>
+                    UI / UX Designer
+                </h1>
+                <!-- <h1 style="">
+                    Full-Stack Developer with a Passion for Teaching Programming | Proficient in Figma, React, Django | Aspiring to Mentor and Empower the Next Generation of Coders
+                </h1> -->
+                <div class="imgBx">
+                    <p dir="rtl">
+                        السلام عليكم <span>👋</span>
+                    </p>
+                    <img  src="media/hero.jpg" alt="" srcset="">
                 </div>
             </div>
-            <div class="card" id="card-2">
-                <div class="services-icons">
-                    <i class="fa-solid fa-sailboat"></i>
+            <div class="btnBx">
+                <div class="available">
+                    <i class="puls-circle"></i>
+                    <p >Available for work</p>
                 </div>
-                <h3>sub-title</h3>
-                <div class="contetn">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, deleniti, dolor ratione non tenetur eius est quas temporibus nisi eligendi deserunt quos voluptatem esse laborum? Eum aliquid expedita dolorem corporis! 
-                </div>
+                <a class="btnSolid" href="#Projects">View My Work</a>
             </div>
-            <div class="card" id="card-3">
-                <div class="services-icons">
-                    <i class="fa-solid fa-sailboat"></i>
+        </div>
+    </div>
+    <!--  ========== About Section ========== -->
+    <div class="AboutCover">
+        <div id="About" class="About container">
+            <h3 class="heading">About Me</h3>
+            <p class="subheading">See Ahmed's story</p>
+            <main>
+                <div class="contentBx">
+                    <p>Hey 👋, my name is <span id="myname">/Ahmed Ghallap/</span> I'm a self-taught full stack developer & designer. who is really into unique designs, user experience and writing clean code.</p> 
+                    <p>Speaking of myself while studying computer engineering in BHI Instuitue. web development crossed my way and since then my journey as a web developer begun. Currently I'm working as a freelance developer.  I'm open to learning and working my level best to make the results near to perfect.</p>
+                    <p>With <b>SOLID programming principles</b> I learned as a <b>Computer Engineering student</b> and a great <b>passion for design</b>, I bring innovative web applications to life.</p>
                 </div>
-                <h3>sub-title</h3>
-                <div class="contetn">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, deleniti, dolor ratione non tenetur eius est quas temporibus nisi eligendi deserunt quos voluptatem esse laborum? Eum aliquid expedita dolorem corporis! 
+                <div class="imgBx">
+                    <img class="a" src="media/ahmed.red.shirt.selfy4.jpg" alt="Ahmed's picture" srcset="">
+                    <img class="b" src="media/self1.png" alt="Ahmed's picture" srcset="">
+                    <img class="c" src="media/self2.png" alt="Ahmed's picture" srcset="">
+                </div>
+            </main>
+        </div>
+    </div>
+    <!--  ========== Projects Section ========== -->
+    <div class="ProjectsCover">
+        <div id="Projects" class="Projects" >
+            <div class="container">
+                <h3 class="heading">Recent Work</h3>
+                <p class="subheading">See Ahmed's projects</p>
+            </div>
+    
+            <div class="card-wrapper">
+                <div class="card">
+                    <img src="./media/cuda.png" alt="">
+                    <div class="card-content ">
+                        fsdkjfkafjkas
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./media/mogo.jpg" alt="">
+                    <div class="card-content">Card 2</div>
                 </div>
             </div>
         </div>
-    </section>
+    </div> 
+    <!--  ========== Stack Section ========== -->
+    <div class="StackCover">
 
+        <div id="Stack" class="Stack container">
+            <h3 class="heading">Stack</h3>
+            <p class="subheading">Software & services I use in my workflow.</p>
+    
+            <div class="cards">
+                <!-- card 1 -->
+                <div class="card">
+                    <div class="text">
+                        <h5 class="title">Figma</h5>
+                        <p class="subTitle">UI Design Tool</p>
+                    </div>
+                    <img src="media/icons/color.Figma-logo.svg" alt="Figma Logo" class="logo"> 
+                </div>
+                <!-- card 2 -->
+                <div class="card">
+                    <div class="text">
+                        <h5 class="title">Vim</h5>
+                        <p class="subTitle">Text Editor</p>
+                    </div>
+                    <img src="media/icons/logo.vim.png" alt="Vim Logo" class="logo"> 
+                </div>
+                <!-- card 3 -->
+                <div class="card">
+                    <div class="text">
+                        <h5 class="title">Firefox</h5>
+                        <p class="subTitle">Web dev</p>
+                    </div>
+                    <img src="media/icons/logo.firefox.png" alt="Fire Fox borser logo" class="logo"> 
+                </div>
+                <!-- card 4 -->
+                <div class="card">
+                    <div class="text">
+                        <h5 class="title">GIMP</h5>
+                        <p class="subTitle">Picutre Editor</p>
+                    </div>
+                    <img src="media/icons/logo.gimp.png" alt="GIMP Logo" class="logo"> 
+                </div>
+                <!-- card 5 -->
+                <div class="card">
+                    <div class="text">
+                        <h5 class="title">Vs code</h5>
+                        <p class="subTitle">Text Editor</p>
+                    </div>
+                    <img src="media/icons/logo.vscode.svg" alt="Vs Code Logo" class="logo"> 
+                </div>
+                <!-- card 6 -->           
+                <div class="card">
+                    <div class="text">
+                        <h5 class="title">Inkscape</h5>
+                        <p class="subTitle">Ilistratur Editr</p>
+                    </div>
+                    <img src="media/icons/logo.inkscape.svg" alt="Inkscape Logo" class="logo"> 
+                </div>
+                <!-- card 7 -->            
+    
+            </div>
+    
+        </div>
+    </div>
+    <!--  ========== Technology Section ========== -->
+    <div class="TechnologyCover">
 
+        <div class="Technology container">
+            <h3 class="heading">Technology</h3>
+            <p class="subheading">See if my web tech fit your needs.</p>
+    
+            <div class="cards">
+                <!-- card 1 -->
+                <div class="card">
+                    <div class="text">
+                        <h5 class="title">HTML</h5>
+                        <p class="subTitle">Frontend</p>
+                    </div>
+                    <img src="media/icons/html.png" alt="HTML Logo" class="logo"> 
+                </div>
+                <!-- card 2 -->
+                <div class="card">
+                    <div class="text">
+                        <h5 class="title">CSS</h5>
+                        <p class="subTitle">Frontend</p>
+                    </div>
+                    <img src="media/icons/css.png" alt="Css Logo" class="logo"> 
+                </div>
+                <!-- card 2 -->
+                <div class="card">
+                    <div class="text">
+                        <h5 class="title">Javascript</h5>
+                        <p class="subTitle">Frontend</p>
+                    </div>
+                    <img src="media/icons/javascript.png" alt="javascript Logo" class="logo"> 
+                </div>
+                <!-- card 2 -->
+                <div class="card">
+                    <div class="text">
+                        <h5 class="title">Django</h5>
+                        <p class="subTitle">Backend</p>
+                    </div>
+                    <img src="media/icons/django.jpg" alt="django Logo" class="logo django"> 
+                </div>
+                <!-- card 2 -->
+                <div class="card">
+                    <div class="text">
+                        <h5 class="title">Python</h5>
+                        <p class="subTitle">backend</p>
+                    </div>
+                    <img src="media/icons/python.png" alt="python Logo" class="logo"> 
+                </div>
+                <!-- card 2 -->
+                <div class="card">
+                    <div class="text">
+                        <h5 class="title">SQL</h5>
+                        <p class="subTitle">Backend</p>
+                    </div>
+                    <img src="media/icons/sql.png" alt="SQL Logo" class="logo"> 
+                </div>
+                <!-- card 2 -->
+                <div class="card">
+                    <div class="text">
+                        <h5 class="title">Regex</h5>
+                        <p class="subTitle">Frontend & Backend</p>
+                    </div>
+                    <img src="media/icons/regex.png" alt="regex Logo" class="logo"> 
+                </div>
+                <!-- card 2 -->
+                <div class="card">
+                    <div class="text">
+                        <h5 class="title">React</h5>
+                        <p class="subTitle">Frontend</p>
+                    </div>
+                    <img src="media/icons/react.png" alt="react Logo" class="logo"> 
+                </div>
+                <!-- card 2 -->
+                <div class="card">
+                    <div class="text">
+                        <h5 class="title">C </h5>
+                        <p class="subTitle">Basics</p>
+                    </div>
+                    <img src="media/icons/c.png" alt="c programing language Logo" class="logo"> 
+                </div>
+            </div>
+    </div>
 
+    </div>
+    <!--  ========== Contact Me Section ========== -->
+    <div id="Contact" class="Contact container">
+        <h3 class="heading">Contact Me</h3>
+        <p class="subheading">Want to work with me! let's start.</p>
+
+        <div class="section-wrapper">
+            <div class="form">
+                <form action="https://formspree.io/f/manwqwoq" method="post">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" name="companyName" placeholder="Company Name If Any">
+                    <textarea rows="9" name="message" placeholder="Wirte your message..." required id=""></textarea>
+    
+                    <p>Local Time 12 : 30 AM</p>
+                    <!-- <input class="btnOutline" type="submit" value="Let's start"> -->
+                    <button class="btnOutline" type="submit">Let's start</button>
+                </form>
+            </div>
+            <div class="info">
+                <div class="wrapper">
+                    <img class="icon" src="./media/icons/phone.icon.png" alt="phone icon" srcset="">
+                    <div class="phone-nums">
+                        <a class="link num" href="tel:+201212849339"><b>+20 121-284-9339</b></a>
+                        <a class="link num" href="tel:+201013566172"><b>+20 101-356-6172</b></a>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <img class="icon" src="media/icons/whats.icon.png" alt="whatsapp icon" srcset="">
+                    <a class="link num"href="https://wa.me/201013566172?text=Hello%20there!" target="_blank"> <b>+20 101-356-6172</b></a>
+                </div>
+                <div class="links">
+                    <a class="link" href="https://github.com/ahmed-ghallap/">github</a>
+                    <a class="link" href="https://www.linkedin.com/in/ahmed-ghallap-322295267">Linken</a>
+                    <a class="link" href="mailto:ahmedor759.gmail.com">Gmail</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  ========== Footer Section ========== -->
+    <footer>
+        <!-- <p>© 2024 Ahmed Ghallap. All rights reserved.</p> -->
+        <p>
+            © 2024 Ahmed Ghallap. All rights reserved. | <a class="link" href="mailto:ahmedor759.gmail.com">ahmedor759.gmail.com</a>
+        </p>
+    </footer>
 </body>
 </html>

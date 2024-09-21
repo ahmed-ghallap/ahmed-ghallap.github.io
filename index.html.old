@@ -1,0 +1,174 @@
+<!-- بسم الله -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ====== Start CSS Files =====-->        <!-- Main file from style.sass  -->
+       <link rel="stylesheet" href="styles/style.css">
+        <!-- Framework file -->
+        <link rel="stylesheet" href="styles/framework.css">
+        <!-- font awesome lib 6.5.1  -->
+        <link rel="stylesheet" href="styles/all.css">
+        <!-- normalize file -->
+        <link rel="stylesheet" href="styles/normalize.css">
+    <!-- ====== End CSS Files =====-->
+     <style>
+        img {
+            display: inline-block;
+            width: 100px;
+        }
+     </style>
+    
+    <title>Ahmed Ghallap</title>
+</head>
+<body>
+    <!--  ========== Navbar ========== -->
+    <div class="Navbar">
+        <nav>
+            <div class="logoBx">
+                <img class="face"  src="media/logo.png" alt="Ahmed's logo picture" srcset="">
+                <img class="text" src="media/ahmedghallap.svg" alt="ahmed's logo text ">
+            </div>
+            <ul class="linksBx">
+                <li><a  href="#">Stack</a></li>
+                <li><a  href="#">About</a></li>
+                <li><a  href="#">Portofolio</a></li>
+                <li><a class="btnSolid" href="#">Contact Me</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!--  ========== Hero Section ========== -->
+    <div class="HeroCover">
+        <div class="Hero container">
+            <div class="content">
+                <h1>
+                    Ahmed is  a<br>
+                    Full Stack Developer<br>
+                    And a<br>
+                    UI / UX Designer
+                </h1>
+                <div class="imgBx">
+                    <p dir="rtl">
+                        السلام عليكم 👋
+                    </p>
+                    <img  src="media/hero.jpg" alt="" srcset="">
+                </div>
+            </div>
+            <div class="btnBx">
+                <div class="available">
+                    <i class="bullet"></i>
+                    <p >Available for work</p>
+                </div>
+                <a class="btnSolid" href="#Projects">View My Work</a>
+            </div>
+        </div>
+    </div>
+    <!--  ========== About Section ========== -->
+    <div class="AboutCover">
+        <div class="About container">
+            <h3 class="heading">About Me</h3>
+            <p class="subheading">See Ahmed's story</p>
+            <main>
+                <div class="contentBx">
+                    <p>Hey 👋, my name is <span id="myname">/Ahmed Ghallap/</span> I'm a self-taught full stack developer & designer. who is really into unique designs, user experience and writing clean code.</p> 
+                    <p>Speaking of myself while studying computer engineering in BHI Instuitue. web development crossed my way and since then my journey as a web developer begun. Currently I'm working as a freelance developer.  I'm open to learning and working my level best to make the results near to perfect.</p>
+                    <p>With <b>SOLID programming principles</b> I learned as a <b>Computer Engineering student</b> and a great <b>passion for design</b>, I bring innovative web applications to life.</p>
+                </div>
+                <div class="imgBx">
+                    <img class="a" src="media/ahmed.red.shirt.selfy4.jpg" alt="Ahmed's picture" srcset="">
+                    <img class="b" src="media/self1.png" alt="Ahmed's picture" srcset="">
+                    <img class="c" src="media/self2.png" alt="Ahmed's picture" srcset="">
+                </div>
+            </main>
+        </div>
+    </div>
+    <!--  ========== Projects Section ========== -->
+    <div class="ProjectsCover">
+        <div class="Projects container" >
+            <h3 class="heading">Recent Work</h3>
+            <p class="subheading">See Ahmed's projects</p>
+    
+            <div class="card-wrapper">
+                <div class="card-1"></div>
+            </div>
+        </div>
+    </div> 
+    <!--  ========== Stack Section ========== -->
+    <div class="Stack container">
+        <h3 class="heading">Stack</h3>
+        <p class="subheading">Software & services I use in my workflow.</p>
+
+        <div class="cards">
+            <!-- card 1 -->
+            <div class="card">
+                <div class="text">
+                    <h5 class="title">Figma</h5>
+                    <p class="subTitle">UI Design Tool</p>
+                </div>
+                <img src="media/icons/color.Figma-logo.svg" alt="Figma Logo" class="logo"> 
+            </div>
+            <!-- card 2 -->
+        </div>
+
+    </div>
+    <!--  ========== Technology Section ========== -->
+    <div class="technology">
+        <h3 class="heading">Technology</h3>
+        <p class="subheading">See if my web tech fit your needs.</p>
+
+        <div class="cards">
+            <!-- card 1 -->
+            <div class="card">
+                <div class="text">
+                    <h5 class="title">HTML</h5>
+                    <p class="subTitle">Frontend</p>
+                </div>
+                <img src="media/icons/figma-logo.svg" alt="Figma Logo" class="logo"> 
+            </div>
+            <!-- card 2 -->
+            <div class="card">
+                <div class="text">
+                    <h5 class="title">HTML</h5>
+                    <p class="subTitle">Frontend</p>
+                </div>
+                <img src="media/icons/figma-logo.svg" alt="Figma Logo" class="logo"> 
+            </div>
+            <!-- card 2 -->
+        </div>
+
+    </div>
+    <!--  ========== Contact Me Section ========== -->
+    <div class="Contact">
+        <h3 class="heading">Contact Me</h3>
+        <p class="subheading">Want to work with me! let's start.</p>
+
+        <div class="form">
+            <form action="https://formspree.io/f/manwqwoq" method="post">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="companyName" placeholder="Company Name If Any">
+                <textarea name="message" placeholder="Wirte your message..." required id=""></textarea>
+
+                <p>Local Time 12 : 30 AM</p>
+                <input class="btnOutline" type="submit" value="Let's start">
+            </form>
+        </div>
+        <div class="info">
+            <div>
+                010102000
+            </div>
+            <div>
+                010102000
+            </div>
+            <div>gmail     ahmedor759@</div>
+        </div>
+
+
+    </div>
+    <!--  ========== Footer Section ========== -->
+    <footer>
+        <p>© 2024 Ahmed Ghallap. All rights reserved.</p>
+    </footer>
+</body>
+</html>
