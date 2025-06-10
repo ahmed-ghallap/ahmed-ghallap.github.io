@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+}
+
+#logo-waves {
+    transform: translateY(-3rem);
+    overflow: visible;
+    width: 100%;
+
+    #wave-1,
+    #wave-2,
+    #wave-3
+     {
+        $clr: rgb(99, 106, 104);
+        $clr-2: rgb(99, 106, 104);
+        stroke: $clr;
+        color: $clr;
+        stroke-width: 1px;
+        // filter: drop-shadow(2px 2px 4px $clr-2);
+
+        overflow: visible;
+        width: 100% !important;
+    }
+}
