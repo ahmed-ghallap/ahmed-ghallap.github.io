@@ -14,7 +14,10 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.8",
+    "@vitejs/plugin-vue": "^5.2.4",
+    "dexie": "^4.0.11",
     "gsap": "^3.13.0",
-    "tailwindcss": "^4.1.8"
+    "tailwindcss": "^4.1.8",
+    "vue": "^3.5.16"
   }
 }

@@ -20,7 +20,6 @@ const logosDefaults = {
   y: 'random([-20, 30])',
   scale: 'random(0.8, 1.2)',
   rotate: 'random([-10, 10])',
-  origin: "center center",
   transformOrigin: "center center",
   ease: "sine.inOut",
   stagger: {
